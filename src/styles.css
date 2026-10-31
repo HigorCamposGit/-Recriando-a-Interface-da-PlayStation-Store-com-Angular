@@ -1,12 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
-*{
-	padding: 0;
-	margin: 0;
-	border: 0;
-	box-sizing: border-box;
+/* Reset */
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(9,9,121,1) 100%);
+/* Configuração de raiz para garantir fluidez na tela inteira */
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+/* Corpo com gradiente profissional e imersivo */
+body {
+    background-color: #121214; /* Fallback em cinza bem escuro */
+    background: linear-gradient(135deg, #0d0d0f 0%, #1a1a1e 50%, #121214 100%);
+    color: #ffffff; /* Define cor padrão do texto */
+    -webkit-font-smoothing: antialiased; /* Deixa as fontes mais nítidas no navegador */
 }

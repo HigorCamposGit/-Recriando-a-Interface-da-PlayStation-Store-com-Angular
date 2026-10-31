@@ -1,10 +1,21 @@
-.home__container{
-	width: 90%;
-	margin: auto;
-	padding-top: 50px;
-	display: flex;
-
-	justify-content: space-around;
-	align-items: baseline;
-	flex-wrap: wrap;
+.home__container {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px; /* Adicionado um respiro embaixo para equilibrar */
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+    
+    /* Fundo cinza escuro translúcido para escurecer a região da home */
+    background-color: rgba(10, 10, 14, 0.6); 
+    
+    /* Bordas arredondadas suaves para criar um bloco centralizado elegante */
+    border-radius: 16px;
+    
+    /* Borda sutil opcional para dar acabamento premium */
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }

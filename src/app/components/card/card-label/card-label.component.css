@@ -1,18 +1,42 @@
 .card-label__container{
-	position: absolute;
-	bottom:90px;
-	right: 0;
+    position: absolute;
+    bottom: 90px;
+    right: 0;
+    z-index: 2; /* Garante que fique acima de outros elementos se necessário */
 }
 
 .card-label__content{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #0d0d0d;
-	color: white;
-	font-size: 12px;
-	font-family: 'Segoe UI';
-	font-weight: bold;
-	height: 40px;
-	padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Fundo cinza escuro translúcido combinando com o glassmorphism do site */
+    background-color: rgba(25, 25, 30, 0.85); 
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    
+    color: white;
+    font-size: 12px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    height: 40px;
+    padding: 0px 50px;
+    
+    /* Borda sutil para dar acabamento de botão moderno */
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px; /* Arredonda levemente o lado esquerdo para dar cara de tag/botão */
+    
+    /* Transição suave e elegante para o efeito hover */
+    transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer; /* Muda o cursor para indicar que é interativo */
+}
+
+/* Efeito ao passar o mouse (Estilo Botão PlayStation) */
+.card-label__content:hover {
+    background-color: #ffffff; /* Fica branco no hover, igual fizemos no menu */
+    color: #000000; /* Letra preta para dar alto contraste */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Um brilho suave de luz ao redor */
 }

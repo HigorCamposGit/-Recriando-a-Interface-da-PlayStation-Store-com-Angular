@@ -1,34 +1,53 @@
-.card-pricing__container{
-	position: absolute;
-	bottom:0px;
-	left: 0;
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	height: 70px;
-	background-color: rgba(0,0,0,0.8);
-	padding: 10px;
-	color: antiquewhite;
-	font-family: Calibri;
+/* Container de preço do card com fundo cinza transparente e efeito moderno */
+.card-pricing__container {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70px;
+    /* Alterado de preto 0.8 para um cinza escuro transparente (Glassmorphism) */
+    background-color: rgba(30, 35, 45, 0.75); 
+    backdrop-filter: blur(6px); /* Deixa levemente esfumaçado o fundo que passa por trás */
+    -webkit-backdrop-filter: blur(6px);
+    padding: 10px;
+    color: antiquewhite;
+    font-family: Calibri;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Linha sutil de acabamento */
 }
 
-.card-pricing__title{
-	margin-bottom: 3px;
+.card-pricing__title {
+    margin-bottom: 3px;
 }
 
-.card-pricing__value{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+.card-pricing__value {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.card-pricing__value__console{
-	display: flex;
-	flex-direction: row;
+.card-pricing__value__console {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.card-pricing__value__console > span{
-	font-weight: bolder;
-	color:aqua;
-	margin-right: 10px;
+/* Substituindo o pipe "|" pelo ícone de play de forma limpa e segura */
+.card-pricing__value__console > span {
+    font-weight: bolder;
+    color: aqua;
+    margin-right: 10px;
+    font-size: 11px; /* Ajusta o tamanho proporcional do ícone de play */
+}
+
+/* Truque seguro: se o span contiver o caractere "|" no HTML, podemos trocá-lo visualmente por "▶" */
+.card-pricing__value__console > span::before {
+    content: "▶"; /* Ícone de play limpo */
+    font-size: 15px;
+}
+
+/* Esconde o texto antigo "|" caso ele ainda esteja escrito dentro do span no HTML */
+.card-pricing__value__console > span {
+    font-size: 0; /* Esconde o texto original sem quebrar o elemento */
 }

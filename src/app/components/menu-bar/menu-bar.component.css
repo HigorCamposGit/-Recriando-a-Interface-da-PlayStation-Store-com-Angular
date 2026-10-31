@@ -1,44 +1,58 @@
-.menu-bar__container{
-	display: flex;
-	flex-direction: row;
-	position: fixed;
-	z-index: 999;
-	background-color: #ffffff;
-	width: 100%;
-	height: 40px;
-	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+.menu-bar__container {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #ffffff;
+    width: 100%;
+    height: 50px; /* Ajustado levemente para acomodar os botões com conforto */
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+    align-items: center;
 }
 
-.menu-bar__logo{
-  margin-left: 30px;
-  display: flex;
-  align-items: center;
+.menu-bar__logo {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
 }
 
-.menu-bar__item{
-  display: flex;
-  margin:auto;
-  align-items: center;
+.menu-bar__item {
+    display: flex;
+    margin: auto;
+    align-items: center;
 }
 
-.menu-bar__item > ul{
-	display: flex;
-	list-style-type: none;
+.menu-bar__item > ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
 }
 
 .menu-bar__item > ul > li {
-	padding: 5px;
-	margin-right: 15px;
+    padding: 0;
+    margin-right: 15px;
 }
 
+/* Transformando os links em botões cinzas com letras brancas */
 .menu-bar__item > ul > li > a {
-	text-decoration: none;
-	padding: 5px;
-	color: rgb(7, 7, 7);
-	font-family: 'Segoe UI';
+    text-decoration: none;
+    padding: 8px 14px;
+    background-color: #555555; /* Tom de cinza para o botão */
+    color: #ffffff; /* Letra branca */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    border: 1px solid transparent; /* Garante que ocupe o mesmo espaço para não tremer no hover */
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
+/* Efeito Hover exato: Fundo branco, letra preta e borda preta */
 .menu-bar__item > ul > li > a:hover {
-	color: blue;
-	font-weight: 600;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    font-weight: 600;
 }

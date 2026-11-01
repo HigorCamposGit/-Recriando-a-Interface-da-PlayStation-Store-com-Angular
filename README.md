@@ -54,7 +54,7 @@ Execute `ng e2e` para rodar os testes ponta a ponta utilizando uma plataforma de
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Code scaffolding.
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
@@ -70,4 +70,5 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Executando testes de ponta a ponta.
 Execute `ng e2e` para realizar os testes de ponta a ponta (end-to-end) por meio de uma plataforma de sua preferência. Para utilizar este comando, é necessário primeiro adicionar um pacote que implemente funcionalidades de testes de ponta a ponta.
+
 ---

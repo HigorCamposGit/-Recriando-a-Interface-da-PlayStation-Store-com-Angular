@@ -66,6 +66,8 @@ Execute `ng build` para compilar o projeto. Os artefatos gerados serão armazena
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
+---
+
 ## Executando testes de ponta a ponta.
 Execute `ng e2e` para realizar os testes de ponta a ponta (end-to-end) por meio de uma plataforma de sua preferência. Para utilizar este comando, é necessário primeiro adicionar um pacote que implemente funcionalidades de testes de ponta a ponta.
 ---

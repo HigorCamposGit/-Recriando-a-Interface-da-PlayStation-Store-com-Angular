@@ -1,8 +1,27 @@
-# Store
+# Desafio recriar uma interface da Playstore.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
+Projeto modificado do [Angular CLI](https://github.com/angular/angular-cli).
 
-## Development server
+## Como executar.
+
+Execute `ng serve` para iniciar um servidor de desenvolvimento. Acesse `http://localhost:4200/`. A aplicação será recarregada automaticamente caso você altere qualquer um dos arquivos de código-fonte.
+
+## Geração de código (Scaffolding)
+
+Execute `ng generate component nome-do-componente` para criar um novo componente. Você também pode usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Execução.
+
+Execute `ng build` para compilar o projeto. Os artefatos gerados serão armazenados no diretório `dist/`.
+
+## Execução de testes unitários
+
+Execute `ng test` para rodar os testes unitários por meio do [Karma](https://karma-runner.github.io).
+
+## Execução de testes ponta a ponta (end-to-end)
+
+Execute `ng e2e` para rodar os testes ponta a ponta utilizando uma plataforma de sua preferência. Para usar este comando, é necessário adicionar previamente um pacote que implemente funcionalidades de testes ponta a ponta.
+
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
@@ -10,20 +29,14 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Compilação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Execute `ng build` para compilar o projeto. Os artefatos gerados serão armazenados no diretório `dist/`.
 
-## Running unit tests
+## Execução de testes unitários
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# -Recriando-a-Interface-da-PlayStation-Store-com-Angular
-# -Recriando-a-Interface-da-PlayStation-Store-com-Angular
+## Executando testes de ponta a ponta.
+Execute `ng e2e` para realizar os testes de ponta a ponta (end-to-end) por meio de uma plataforma de sua preferência. Para utilizar este comando, é necessário primeiro adicionar um pacote que implemente funcionalidades de testes de ponta a ponta.
+---

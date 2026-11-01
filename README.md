@@ -72,3 +72,5 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Execute `ng e2e` para realizar os testes de ponta a ponta (end-to-end) por meio de uma plataforma de sua preferência. Para utilizar este comando, é necessário primeiro adicionar um pacote que implemente funcionalidades de testes de ponta a ponta.
 
 ---
+
+🔗 Conecte-se comigo: [HigorCamposGit](https://github.com/HigorCamposGit) (Higor de Campos)

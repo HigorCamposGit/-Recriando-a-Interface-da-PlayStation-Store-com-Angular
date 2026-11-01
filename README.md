@@ -25,6 +25,10 @@ Projeto desenvolvido para recriar a interface web da PlayStation Store utilizand
 - **CardLabel:** Rótulo dinâmico gerenciado via `@Input()` para exibir tags.
 - **CardPricing:** Seção de preços e plataformas (PS4 / PS5).
 
+---
+README.md Original com mais informações.
+---
+
 ## Como Executar o Projeto
 
 Projeto modificado do [Angular CLI](https://github.com/angular/angular-cli).
